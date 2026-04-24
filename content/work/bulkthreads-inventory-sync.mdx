@@ -1,0 +1,34 @@
+---
+title: "BulkThreads — supplier inventory sync API"
+slug: bulkthreads-inventory-sync
+summary: "Built an API to sync inventory across SanMar and other supplier systems—real-time tracking across thousands of SKUs for better accuracy and less manual overhead in day-to-day operations."
+client: "BulkThreads"
+industry: "Wholesale / apparel & promotional products"
+year: 2026
+tags: ["API design", "Integrations", "Inventory", "SanMar", "Operations"]
+services:
+  - "Custom web applications"
+  - "High-performance frontends & modern rebuilds"
+  - "Production launches & ongoing technical support"
+metrics: []
+outcomesBrief:
+  - "Single integration surface for SanMar and additional supplier feeds instead of ad-hoc scripts per vendor."
+  - "Inventory state propagated in near real time across a large SKU catalog so merchandising and fulfillment see the same numbers."
+  - "Reduced manual reconciliation and spreadsheet-driven updates as the default path for routine syncs."
+featured: true
+published: true
+---
+
+## Context
+
+BulkThreads operates across **multiple supplier systems**—including **SanMar**—with a catalog that spans **thousands of SKUs**. Before the build, inventory truth lived in different shapes per vendor, and operations teams spent meaningful time **reconciling** and **updating** by hand.
+
+## What Monarc Made focused on
+
+- **Sync API** — normalized ingestion and scheduling so each supplier’s model maps into one internal inventory contract.
+- **Scale and accuracy** — handling high SKU volume without turning every sync into a brittle batch job.
+- **Operational fit** — errors, partial runs, and retries surfaced clearly so day-to-day work is not guesswork.
+
+## How it landed
+
+The API is the **system of record bridge** between supplier data and how BulkThreads runs the business: fewer mismatches between what the site says is in stock and what teams can actually ship, and **less manual overhead** on the routines that used to eat hours each week.
