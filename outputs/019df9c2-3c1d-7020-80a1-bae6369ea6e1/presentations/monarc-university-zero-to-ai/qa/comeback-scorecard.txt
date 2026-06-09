@@ -1,0 +1,7 @@
+Profile: gtm-growth primary; engineering-platform secondary
+Profile gate: pass
+Package checks: PPTX exists, non-empty, 10 slide XML files confirmed
+Render checks: all 10 slides rendered; slide 05 overlap fixed after preview review
+Thumbnail checks: horizontal and vertical PNGs rendered; YouTube text collision fixed after preview review
+Scores: story 4, specificity 4, rhythm 4, whitespace 4, typography 4, restraint 4, coherence 4, precision 4, chart clarity n/a, reference delta n/a
+Residual gaps: course modules/pricing are professional starter assumptions until user finalizes Monarc University curriculum and offer.

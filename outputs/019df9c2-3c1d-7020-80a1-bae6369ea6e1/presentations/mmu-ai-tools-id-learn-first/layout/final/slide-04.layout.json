@@ -1,0 +1,673 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/m8v9t1",
+    "id": "m8v9t1",
+    "slide": 4,
+    "layoutId": "528b04e4-b49a-42fd-99d7-08ff470be21a",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "c531cfbc-0bc1-4a44-82ce-86ec0e825d97",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Avenir Next",
+      "Georgia"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "528b04e4-b49a-42fd-99d7-08ff470be21a",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "c531cfbc-0bc1-4a44-82ce-86ec0e825d97",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "c531cfbc-0bc1-4a44-82ce-86ec0e825d97",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jqh0fepk",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#071018",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8bat47y1",
+      "id": "2",
+      "bbox": [
+        912,
+        -120,
+        500,
+        500
+      ],
+      "geometry": "rect",
+      "fillColor": "#083348",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1w7mp0bi",
+      "id": "3",
+      "bbox": [
+        -120,
+        540,
+        420,
+        240
+      ],
+      "geometry": "rect",
+      "fillColor": "#0B2432",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qh0fepkz",
+      "id": "4",
+      "bbox": [
+        62,
+        58,
+        44,
+        3
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A6D6",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/j2t83itg",
+      "id": "5",
+      "name": "kicker-label",
+      "bbox": [
+        118,
+        50,
+        440,
+        26
+      ],
+      "geometry": "rect",
+      "text": "TOOL 1",
+      "textPreview": "TOOL 1",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "TOOL 1"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "TOOL 1",
+          "runs": [
+            {
+              "index": 1,
+              "text": "TOOL 1",
+              "fontSize": 11,
+              "typeface": "Avenir Next",
+              "color": "#00A6D6",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8nqxs72x",
+      "id": "6",
+      "bbox": [
+        62,
+        92,
+        820,
+        132
+      ],
+      "geometry": "rect",
+      "text": "Learn one thinking model deeply before adding more.",
+      "textPreview": "Learn one thinking model deeply before adding more.",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "fontSize": 48,
+        "typeface": "Georgia",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Learn one thinking model deeply"
+          },
+          {
+            "index": 2,
+            "text": "before adding more."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Learn one thinking model deeply before adding more.",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Learn one thinking model deeply before adding more.",
+              "fontSize": 48,
+              "typeface": "Georgia",
+              "color": "#F5F8FB",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/18jqh0fe",
+      "id": "7",
+      "bbox": [
+        88,
+        266,
+        466,
+        210
+      ],
+      "geometry": "rect",
+      "fillColor": "#0E1A24",
+      "lineColor": "#1B5366",
+      "lineWidth": 1
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ulwval87",
+      "id": "8",
+      "bbox": [
+        122,
+        302,
+        180,
+        22
+      ],
+      "geometry": "rect",
+      "text": "Use it for",
+      "textPreview": "Use it for",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Use it for"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Use it for",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Use it for",
+              "fontSize": 18,
+              "typeface": "Avenir Next",
+              "color": "#D6A84A",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/j6tovaho",
+      "id": "9",
+      "bbox": [
+        122,
+        350,
+        280,
+        118
+      ],
+      "geometry": "rect",
+      "text": "• Brainstorming\n• Research questions\n• Outlines\n• Decisions\n• Scripts\n• Strategy",
+      "textPreview": "• Brainstorming | • Research questions | • Outlines | • Decisions | • Scripts | • Strategy",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "Avenir Next",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 6,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• Brainstorming"
+          },
+          {
+            "index": 2,
+            "text": "• Research questions"
+          },
+          {
+            "index": 3,
+            "text": "• Outlines"
+          },
+          {
+            "index": 4,
+            "text": "• Decisions"
+          },
+          {
+            "index": 5,
+            "text": "• Scripts"
+          },
+          {
+            "index": 6,
+            "text": "• Strategy"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• Brainstorming",
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Brainstorming",
+              "fontSize": 22,
+              "typeface": "Avenir Next",
+              "color": "#F5F8FB"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "text": "• Research questions",
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Research questions",
+              "fontSize": 22,
+              "typeface": "Avenir Next",
+              "color": "#F5F8FB"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "text": "• Outlines",
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Outlines",
+              "fontSize": 22,
+              "typeface": "Avenir Next",
+              "color": "#F5F8FB"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "text": "• Decisions",
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Decisions",
+              "fontSize": 22,
+              "typeface": "Avenir Next",
+              "color": "#F5F8FB"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "text": "• Scripts",
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Scripts",
+              "fontSize": 22,
+              "typeface": "Avenir Next",
+              "color": "#F5F8FB"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "text": "• Strategy",
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Strategy",
+              "fontSize": 22,
+              "typeface": "Avenir Next",
+              "color": "#F5F8FB"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/j2t83itg",
+      "id": "10",
+      "bbox": [
+        674,
+        210,
+        392,
+        300
+      ],
+      "geometry": "rect",
+      "fillColor": "#102533",
+      "lineColor": "#263747",
+      "lineWidth": 1
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qh0fepkz",
+      "id": "11",
+      "bbox": [
+        714,
+        250,
+        220,
+        22
+      ],
+      "geometry": "rect",
+      "text": "Practice prompt",
+      "textPreview": "Practice prompt",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Practice prompt"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Practice prompt",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Practice prompt",
+              "fontSize": 18,
+              "typeface": "Avenir Next",
+              "color": "#B7F3FF",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/18jqh0fe",
+      "id": "12",
+      "bbox": [
+        714,
+        310,
+        300,
+        120
+      ],
+      "geometry": "rect",
+      "text": "“Ask me questions until you understand my goal, then create a practical action plan I can execute this week.”",
+      "textPreview": "“Ask me questions until you understand my goal, then create a practical action plan I can execute this week.”",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "fontSize": 27,
+        "typeface": "Georgia",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "“Ask me questions until"
+          },
+          {
+            "index": 2,
+            "text": "you understand my goal,"
+          },
+          {
+            "index": 3,
+            "text": "then create a practical"
+          },
+          {
+            "index": 4,
+            "text": "action plan I can execute"
+          },
+          {
+            "index": 5,
+            "text": "this week.”"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "“Ask me questions until you understand my goal, then create a practical action plan I can execute this week.”",
+          "runs": [
+            {
+              "index": 1,
+              "text": "“Ask me questions until you understand my goal, then create a practical action plan I can execute this week.”",
+              "fontSize": 27,
+              "typeface": "Georgia",
+              "color": "#F5F8FB"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8nqxs72x",
+      "id": "13",
+      "bbox": [
+        64,
+        676,
+        380,
+        18
+      ],
+      "geometry": "rect",
+      "text": "Monarc University - Video Package 3",
+      "textPreview": "Monarc University - Video Package 3",
+      "resolvedFontSize": 9,
+      "resolvedTextStyle": {
+        "fontSize": 9,
+        "typeface": "Avenir Next",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Monarc University - Video Package 3"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Monarc University - Video Package 3",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Monarc University - Video Package 3",
+              "fontSize": 9,
+              "typeface": "Avenir Next",
+              "color": "#607080"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jqh0fepk",
+      "id": "14",
+      "bbox": [
+        1160,
+        674,
+        54,
+        20
+      ],
+      "geometry": "rect",
+      "text": "04",
+      "textPreview": "04",
+      "resolvedFontSize": 10,
+      "resolvedTextStyle": {
+        "fontSize": 10,
+        "typeface": "Avenir Next",
+        "alignment": "right"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "04"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "04",
+          "runs": [
+            {
+              "index": 1,
+              "text": "04",
+              "fontSize": 10,
+              "typeface": "Avenir Next",
+              "color": "#607080"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

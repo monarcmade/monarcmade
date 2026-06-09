@@ -11,11 +11,15 @@ const withMDX = createMDX({
 /** Hostnames (no protocol) allowed to load /_next dev assets when not using localhost. */
 function allowedDevOriginsFromEnv(): string[] {
   const raw = process.env.NEXT_ALLOWED_DEV_ORIGINS;
-  if (!raw) return [];
-  return raw
-    .split(/[,;\s]+/)
-    .map((s) => s.trim())
-    .filter(Boolean);
+  const defaults = ["192.168.1.68:3002", "192.168.1.68"];
+  if (!raw) return defaults;
+  return [
+    ...defaults,
+    ...raw
+      .split(/[,;\s]+/)
+      .map((s) => s.trim())
+      .filter(Boolean),
+  ];
 }
 
 const nextConfig: NextConfig = {

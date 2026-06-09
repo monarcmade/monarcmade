@@ -1,0 +1,735 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/yt38zt",
+    "id": "yt38zt",
+    "slide": 8,
+    "layoutId": "77f188fd-f268-4aeb-98f9-52f690253d24",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2b142310-d9c7-49f3-849e-2d64e52458f0",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Avenir Next",
+      "Georgia"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "77f188fd-f268-4aeb-98f9-52f690253d24",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2b142310-d9c7-49f3-849e-2d64e52458f0",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2b142310-d9c7-49f3-849e-2d64e52458f0",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mp0bi9s3",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#071018",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tgfmlkjm",
+      "id": "2",
+      "bbox": [
+        900,
+        -120,
+        500,
+        500
+      ],
+      "geometry": "rect",
+      "fillColor": "#082E41",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4vmtwra5",
+      "id": "3",
+      "bbox": [
+        -120,
+        540,
+        420,
+        240
+      ],
+      "geometry": "rect",
+      "fillColor": "#0B2432",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bm58z25k",
+      "id": "4",
+      "bbox": [
+        62,
+        58,
+        44,
+        3
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A6D6",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m1cfa9w3",
+      "id": "5",
+      "name": "kicker-label",
+      "bbox": [
+        118,
+        50,
+        440,
+        26
+      ],
+      "geometry": "rect",
+      "text": "CALL TO ACTION",
+      "textPreview": "CALL TO ACTION",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CALL TO ACTION"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CALL TO ACTION",
+          "runs": [
+            {
+              "index": 1,
+              "text": "CALL TO ACTION",
+              "fontSize": 11,
+              "typeface": "Avenir Next",
+              "color": "#00A6D6",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tsvu9kni",
+      "id": "6",
+      "bbox": [
+        62,
+        112,
+        760,
+        128
+      ],
+      "geometry": "rect",
+      "text": "Apply if you want the guided version.",
+      "textPreview": "Apply if you want the guided version.",
+      "resolvedFontSize": 54,
+      "resolvedTextStyle": {
+        "fontSize": 54,
+        "typeface": "Georgia",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Apply if you want the"
+          },
+          {
+            "index": 2,
+            "text": "guided version."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Apply if you want the guided version.",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Apply if you want the guided version.",
+              "fontSize": 54,
+              "typeface": "Georgia",
+              "color": "#F5F8FB",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/47y1kre1",
+      "id": "7",
+      "bbox": [
+        66,
+        270,
+        720,
+        72
+      ],
+      "geometry": "rect",
+      "text": "If you are tired of guessing what to learn next, Monarc University gives you the roadmap, the labs, the projects, and the capstone.",
+      "textPreview": "If you are tired of guessing what to learn next, Monarc University gives you the roadmap, the labs, the projects, and the capstone.",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Avenir Next",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "If you are tired of guessing what to learn next, Monarc University"
+          },
+          {
+            "index": 2,
+            "text": "gives you the roadmap, the labs, the projects, and the capstone."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "If you are tired of guessing what to learn next, Monarc University gives you the roadmap, the labs, the projects, and the capstone.",
+          "runs": [
+            {
+              "index": 1,
+              "text": "If you are tired of guessing what to learn next, Monarc University gives you the roadmap, the labs, the projects, and the capstone.",
+              "fontSize": 24,
+              "typeface": "Avenir Next",
+              "color": "#94A6B8"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bq1oryts",
+      "id": "8",
+      "bbox": [
+        66,
+        382,
+        680,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A6D6",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m58z25kb",
+      "id": "9",
+      "bbox": [
+        66,
+        420,
+        690,
+        48
+      ],
+      "geometry": "rect",
+      "text": "Apply for the founding cohort at monarcmade.com/university",
+      "textPreview": "Apply for the founding cohort at monarcmade.com/university",
+      "resolvedFontSize": 28,
+      "resolvedTextStyle": {
+        "fontSize": 28,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Apply for the founding cohort at"
+          },
+          {
+            "index": 2,
+            "text": "monarcmade.com/university"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Apply for the founding cohort at monarcmade.com/university",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Apply for the founding cohort at monarcmade.com/university",
+              "fontSize": 28,
+              "typeface": "Avenir Next",
+              "color": "#F5F8FB",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/o7qpg3ex",
+      "id": "10",
+      "bbox": [
+        844,
+        168,
+        284,
+        260
+      ],
+      "geometry": "rect",
+      "fillColor": "#0E1A24",
+      "lineColor": "#1B5366",
+      "lineWidth": 1
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dsji5sne",
+      "id": "11",
+      "bbox": [
+        876,
+        202,
+        160,
+        18
+      ],
+      "geometry": "rect",
+      "text": "CTA STACK",
+      "textPreview": "CTA STACK",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CTA STACK"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CTA STACK",
+          "runs": [
+            {
+              "index": 1,
+              "text": "CTA STACK",
+              "fontSize": 11,
+              "typeface": "Avenir Next",
+              "color": "#D6A84A",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/61032lsz",
+      "id": "12",
+      "bbox": [
+        876,
+        244,
+        196,
+        34
+      ],
+      "geometry": "rect",
+      "fillColor": "#0D2532",
+      "lineColor": "#164356",
+      "lineWidth": 1
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vmtwra5g",
+      "id": "13",
+      "bbox": [
+        890,
+        253,
+        168,
+        16
+      ],
+      "geometry": "rect",
+      "text": "Apply",
+      "textPreview": "Apply",
+      "resolvedFontSize": 10,
+      "resolvedTextStyle": {
+        "fontSize": 10,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Apply"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Apply",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Apply",
+              "fontSize": 10,
+              "typeface": "Avenir Next",
+              "color": "#B7F3FF",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oj2t83it",
+      "id": "14",
+      "bbox": [
+        876,
+        292,
+        196,
+        34
+      ],
+      "geometry": "rect",
+      "fillColor": "#0D2532",
+      "lineColor": "#164356",
+      "lineWidth": 1
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d4vmtwra",
+      "id": "15",
+      "bbox": [
+        890,
+        301,
+        168,
+        16
+      ],
+      "geometry": "rect",
+      "text": "Build a workflow",
+      "textPreview": "Build a workflow",
+      "resolvedFontSize": 10,
+      "resolvedTextStyle": {
+        "fontSize": 10,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Build a workflow"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Build a workflow",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Build a workflow",
+              "fontSize": 10,
+              "typeface": "Avenir Next",
+              "color": "#B7F3FF",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6dcbulwv",
+      "id": "16",
+      "bbox": [
+        876,
+        340,
+        196,
+        34
+      ],
+      "geometry": "rect",
+      "fillColor": "#0D2532",
+      "lineColor": "#164356",
+      "lineWidth": 1
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vy90je9c",
+      "id": "17",
+      "bbox": [
+        890,
+        349,
+        168,
+        16
+      ],
+      "geometry": "rect",
+      "text": "Ship a capstone",
+      "textPreview": "Ship a capstone",
+      "resolvedFontSize": 10,
+      "resolvedTextStyle": {
+        "fontSize": 10,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Ship a capstone"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Ship a capstone",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Ship a capstone",
+              "fontSize": 10,
+              "typeface": "Avenir Next",
+              "color": "#B7F3FF",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/onyd0z61",
+      "id": "18",
+      "bbox": [
+        64,
+        676,
+        380,
+        18
+      ],
+      "geometry": "rect",
+      "text": "Monarc University - Video Package 2",
+      "textPreview": "Monarc University - Video Package 2",
+      "resolvedFontSize": 9,
+      "resolvedTextStyle": {
+        "fontSize": 9,
+        "typeface": "Avenir Next",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Monarc University - Video Package 2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Monarc University - Video Package 2",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Monarc University - Video Package 2",
+              "fontSize": 9,
+              "typeface": "Avenir Next",
+              "color": "#607080"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d8v6psfi",
+      "id": "19",
+      "bbox": [
+        1160,
+        674,
+        54,
+        20
+      ],
+      "geometry": "rect",
+      "text": "08",
+      "textPreview": "08",
+      "resolvedFontSize": 10,
+      "resolvedTextStyle": {
+        "fontSize": 10,
+        "typeface": "Avenir Next",
+        "alignment": "right"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "08"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "08",
+          "runs": [
+            {
+              "index": 1,
+              "text": "08",
+              "fontSize": 10,
+              "typeface": "Avenir Next",
+              "color": "#607080"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

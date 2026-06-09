@@ -1,0 +1,989 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/ao3rdj",
+    "id": "ao3rdj",
+    "slide": 7,
+    "layoutId": "711b600e-bc7c-4ee5-9861-c6fe8a9a7727",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "19091f57-8e10-4163-87f7-a88fdb949de3",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Avenir Next",
+      "Georgia"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "711b600e-bc7c-4ee5-9861-c6fe8a9a7727",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "19091f57-8e10-4163-87f7-a88fdb949de3",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "19091f57-8e10-4163-87f7-a88fdb949de3",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rytsvu9k",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#081018",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gfmlkjm1",
+      "id": "2",
+      "bbox": [
+        880,
+        -120,
+        520,
+        520
+      ],
+      "geometry": "rect",
+      "fillColor": "#083044",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/90je9cvi",
+      "id": "3",
+      "bbox": [
+        -120,
+        520,
+        420,
+        260
+      ],
+      "geometry": "rect",
+      "fillColor": "#0B2432",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y1kre1w7",
+      "id": "4",
+      "bbox": [
+        62,
+        58,
+        44,
+        3
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A6D6",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rmhk3q5o",
+      "id": "5",
+      "name": "kicker-label",
+      "bbox": [
+        118,
+        50,
+        360,
+        26
+      ],
+      "geometry": "rect",
+      "text": "CONTENT ENGINE",
+      "textPreview": "CONTENT ENGINE",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CONTENT ENGINE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CONTENT ENGINE",
+          "runs": [
+            {
+              "index": 1,
+              "text": "CONTENT ENGINE",
+              "fontSize": 11,
+              "typeface": "Avenir Next",
+              "color": "#00A6D6",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g7adsji5",
+      "id": "6",
+      "bbox": [
+        62,
+        94,
+        780,
+        116
+      ],
+      "geometry": "rect",
+      "text": "One YouTube video becomes a week of distribution.",
+      "textPreview": "One YouTube video becomes a week of distribution.",
+      "resolvedFontSize": 42,
+      "resolvedTextStyle": {
+        "fontSize": 42,
+        "typeface": "Georgia",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "One YouTube video becomes a week"
+          },
+          {
+            "index": 2,
+            "text": "of distribution."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "One YouTube video becomes a week of distribution.",
+          "runs": [
+            {
+              "index": 1,
+              "text": "One YouTube video becomes a week of distribution.",
+              "fontSize": 42,
+              "typeface": "Georgia",
+              "color": "#F4F8FB",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9s36hcrm",
+      "id": "7",
+      "bbox": [
+        64,
+        224,
+        650,
+        78
+      ],
+      "geometry": "rect",
+      "text": "The long-form video is the source asset. Every platform gets a native cut, not a lazy repost.",
+      "textPreview": "The long-form video is the source asset. Every platform gets a native cut, not a lazy repost.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "Avenir Next",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The long-form video is the source asset. Every platform gets a native cut, not a"
+          },
+          {
+            "index": 2,
+            "text": "lazy repost."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The long-form video is the source asset. Every platform gets a native cut, not a lazy repost.",
+          "runs": [
+            {
+              "index": 1,
+              "text": "The long-form video is the source asset. Every platform gets a native cut, not a lazy repost.",
+              "fontSize": 18,
+              "typeface": "Avenir Next",
+              "color": "#95A7B8"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yxobm58z",
+      "id": "8",
+      "bbox": [
+        82,
+        336,
+        240,
+        150
+      ],
+      "geometry": "rect",
+      "fillColor": "#0D2532",
+      "lineColor": "#1B5366",
+      "lineWidth": 2
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nih4byhg",
+      "id": "9",
+      "bbox": [
+        112,
+        360,
+        120,
+        18
+      ],
+      "geometry": "rect",
+      "text": "SOURCE",
+      "textPreview": "SOURCE",
+      "resolvedFontSize": 10,
+      "resolvedTextStyle": {
+        "fontSize": 10,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "SOURCE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "SOURCE",
+          "runs": [
+            {
+              "index": 1,
+              "text": "SOURCE",
+              "fontSize": 10,
+              "typeface": "Avenir Next",
+              "color": "#D6A84A",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/72x4nap4",
+      "id": "10",
+      "bbox": [
+        112,
+        392,
+        180,
+        62
+      ],
+      "geometry": "rect",
+      "text": "YouTube\n7 min",
+      "textPreview": "YouTube | 7 min",
+      "resolvedFontSize": 34,
+      "resolvedTextStyle": {
+        "fontSize": 34,
+        "typeface": "Georgia",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "YouTube"
+          },
+          {
+            "index": 2,
+            "text": "7 min"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "YouTube",
+          "runs": [
+            {
+              "index": 1,
+              "text": "YouTube",
+              "fontSize": 34,
+              "typeface": "Georgia",
+              "color": "#F4F8FB",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "text": "7 min",
+          "runs": [
+            {
+              "index": 1,
+              "text": "7 min",
+              "fontSize": 34,
+              "typeface": "Georgia",
+              "color": "#F4F8FB",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ih4byhgn",
+      "id": "11",
+      "bbox": [
+        400,
+        314,
+        170,
+        74
+      ],
+      "geometry": "rect",
+      "fillColor": "#101A24",
+      "lineColor": "#243241",
+      "lineWidth": 1
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p8nqxs72",
+      "id": "12",
+      "bbox": [
+        420,
+        336,
+        130,
+        24
+      ],
+      "geometry": "rect",
+      "text": "3 Shorts",
+      "textPreview": "3 Shorts",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "3 Shorts"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "3 Shorts",
+          "runs": [
+            {
+              "index": 1,
+              "text": "3 Shorts",
+              "fontSize": 16,
+              "typeface": "Avenir Next",
+              "color": "#F4F8FB",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0nuxc3yl",
+      "id": "13",
+      "bbox": [
+        610,
+        314,
+        170,
+        74
+      ],
+      "geometry": "rect",
+      "fillColor": "#101A24",
+      "lineColor": "#243241",
+      "lineWidth": 1
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7ed8bat4",
+      "id": "14",
+      "bbox": [
+        630,
+        336,
+        130,
+        24
+      ],
+      "geometry": "rect",
+      "text": "LinkedIn lesson",
+      "textPreview": "LinkedIn lesson",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "LinkedIn lesson"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "LinkedIn lesson",
+          "runs": [
+            {
+              "index": 1,
+              "text": "LinkedIn lesson",
+              "fontSize": 16,
+              "typeface": "Avenir Next",
+              "color": "#F4F8FB",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/itgfmlkj",
+      "id": "15",
+      "bbox": [
+        820,
+        314,
+        170,
+        74
+      ],
+      "geometry": "rect",
+      "fillColor": "#101A24",
+      "lineColor": "#243241",
+      "lineWidth": 1
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pkzupwb2",
+      "id": "16",
+      "bbox": [
+        840,
+        336,
+        130,
+        24
+      ],
+      "geometry": "rect",
+      "text": "IG carousel",
+      "textPreview": "IG carousel",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "IG carousel"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "IG carousel",
+          "runs": [
+            {
+              "index": 1,
+              "text": "IG carousel",
+              "fontSize": 16,
+              "typeface": "Avenir Next",
+              "color": "#F4F8FB",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0z61032l",
+      "id": "17",
+      "bbox": [
+        400,
+        426,
+        170,
+        74
+      ],
+      "geometry": "rect",
+      "fillColor": "#101A24",
+      "lineColor": "#243241",
+      "lineWidth": 1
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7qpg3ex0",
+      "id": "18",
+      "bbox": [
+        420,
+        448,
+        130,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Email invite",
+      "textPreview": "Email invite",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Email invite"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Email invite",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Email invite",
+              "fontSize": 16,
+              "typeface": "Avenir Next",
+              "color": "#F4F8FB",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i5sneloj",
+      "id": "19",
+      "bbox": [
+        610,
+        426,
+        170,
+        74
+      ],
+      "geometry": "rect",
+      "fillColor": "#101A24",
+      "lineColor": "#243241",
+      "lineWidth": 1
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m94fu18j",
+      "id": "20",
+      "bbox": [
+        630,
+        448,
+        130,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Blog recap",
+      "textPreview": "Blog recap",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Blog recap"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Blog recap",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Blog recap",
+              "fontSize": 16,
+              "typeface": "Avenir Next",
+              "color": "#F4F8FB",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fu18jqh0",
+      "id": "21",
+      "bbox": [
+        876,
+        510,
+        318,
+        92
+      ],
+      "geometry": "rect",
+      "fillColor": "#0D2532",
+      "lineColor": "#1B5366",
+      "lineWidth": 1
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4fu18jqh",
+      "id": "22",
+      "bbox": [
+        898,
+        528,
+        120,
+        14
+      ],
+      "geometry": "rect",
+      "text": "SPEAKER NOTE",
+      "textPreview": "SPEAKER NOTE",
+      "resolvedFontSize": 9,
+      "resolvedTextStyle": {
+        "fontSize": 9,
+        "typeface": "Avenir Next",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "SPEAKER NOTE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "SPEAKER NOTE",
+          "runs": [
+            {
+              "index": 1,
+              "text": "SPEAKER NOTE",
+              "fontSize": 9,
+              "typeface": "Avenir Next",
+              "color": "#D6A84A",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x0nuxc3y",
+      "id": "23",
+      "bbox": [
+        898,
+        550,
+        268,
+        40
+      ],
+      "geometry": "rect",
+      "text": "This helps you stay consistent. Record once, repurpose deliberately.",
+      "textPreview": "This helps you stay consistent. Record once, repurpose deliberately.",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "Avenir Next",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "This helps you stay consistent. Record once,"
+          },
+          {
+            "index": 2,
+            "text": "repurpose deliberately."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "This helps you stay consistent. Record once, repurpose deliberately.",
+          "runs": [
+            {
+              "index": 1,
+              "text": "This helps you stay consistent. Record once, repurpose deliberately.",
+              "fontSize": 11,
+              "typeface": "Avenir Next",
+              "color": "#95A7B8"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qxs72x4n",
+      "id": "24",
+      "bbox": [
+        64,
+        676,
+        360,
+        18
+      ],
+      "geometry": "rect",
+      "text": "Monarc University launch kit",
+      "textPreview": "Monarc University launch kit",
+      "resolvedFontSize": 9,
+      "resolvedTextStyle": {
+        "fontSize": 9,
+        "typeface": "Avenir Next",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Monarc University launch kit"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Monarc University launch kit",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Monarc University launch kit",
+              "fontSize": 9,
+              "typeface": "Avenir Next",
+              "color": "#607080"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fil0rqd4",
+      "id": "25",
+      "bbox": [
+        1160,
+        674,
+        54,
+        20
+      ],
+      "geometry": "rect",
+      "text": "07",
+      "textPreview": "07",
+      "resolvedFontSize": 10,
+      "resolvedTextStyle": {
+        "fontSize": 10,
+        "typeface": "Avenir Next",
+        "alignment": "right"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "07"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "07",
+          "runs": [
+            {
+              "index": 1,
+              "text": "07",
+              "fontSize": 10,
+              "typeface": "Avenir Next",
+              "color": "#607080"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

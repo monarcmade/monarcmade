@@ -1,122 +1,176 @@
 export const universityHero = {
   eyebrow: "Monarc Made University",
-  title: "Learn AI from first principles — and build things that matter.",
+  title: "Learn AI from zero and build real systems.",
   description:
-    "A structured curriculum that takes you from zero to production-ready AI engineering. No fluff, no hype — just the systems thinking, tools, and hands-on reps that close the gap between 'I've heard of it' and 'I shipped it.'",
+    "A guided AI builder cohort for beginners, founders, creatives, and professionals who want more than prompts. Learn the roadmap, build real workflows, and leave with a shipped AI project you can use for business, career growth, or client work.",
 };
 
 export const universityWhy = {
   eyebrow: "Why this exists",
-  title: "Most AI content teaches you to copy. This teaches you to build.",
+  title: "Most AI content is scattered. This gives you the roadmap.",
   description:
-    "There's no shortage of tutorials that show you how to paste an API key and get a chatbot running. That's not enough. This curriculum is built around the mental models, architecture decisions, and real-world constraints you'll face when AI moves from experiment to production.",
+    "You should not have to piece together random videos, tool lists, and hype threads just to understand what to learn next. Monarc University turns AI into a clear build path: learn the concepts, practice the workflows, ship the project, and know how to keep going.",
 };
+
+export const universityStats = [
+  { value: "12 or 24", label: "week cohort paths" },
+  { value: "6", label: "builder phases" },
+  { value: "1", label: "shipped capstone" },
+];
+
+export const universityTracks = [
+  {
+    title: "12-Week Fast Track",
+    eyebrow: "Accelerated",
+    price: "$1,497-$2,500",
+    description:
+      "For serious builders who want structure, speed, accountability, and a clear finish line.",
+    details: ["6-10 hours per week", "2 live sessions per week", "Weekly labs and reviews", "Capstone shipped by week 12"],
+  },
+  {
+    title: "24-Week Guided Cohort",
+    eyebrow: "Standard",
+    price: "$2,500-$4,000",
+    description:
+      "For beginners and busy professionals who want the same outcome with more room to practice.",
+    details: ["3-5 hours per week", "1 live session per week", "More review time", "Same capstone, slower pace"],
+  },
+];
 
 export const universityModules = [
   {
     number: "01",
-    title: "Foundations of AI & LLMs",
-    duration: "2 weeks",
+    title: "AI Foundations",
+    duration: "Weeks 1-2 / 1-4",
     description:
-      "How large language models actually work — tokenization, embeddings, attention, and inference. Enough theory to debug what breaks in practice.",
-    topics: ["Transformers & attention", "Tokens & context windows", "Model families & tradeoffs", "Prompting fundamentals"],
+      "Understand what AI is, how LLMs work, what models are good at, where they fail, and how to choose the right tools.",
+    topics: ["LLMs in plain English", "Tokens & context", "Tool selection", "Hallucinations"],
   },
   {
     number: "02",
-    title: "Prompt Engineering & Chain Design",
-    duration: "2 weeks",
+    title: "Prompt Systems",
+    duration: "Weeks 3-4 / 5-8",
     description:
-      "Systematic approaches to writing prompts that hold up under variation. Few-shot, chain-of-thought, tool use, and structured outputs.",
-    topics: ["Few-shot & zero-shot", "Chain-of-thought reasoning", "Structured JSON outputs", "Eval-driven iteration"],
+      "Move from random prompts to repeatable systems for content, operations, business workflows, and personal productivity.",
+    topics: ["Prompt structure", "Voice & style", "Structured outputs", "Workflow prompts"],
   },
   {
     number: "03",
-    title: "Building with APIs",
-    duration: "3 weeks",
+    title: "AI APIs & Apps",
+    duration: "Weeks 5-6 / 9-12",
     description:
-      "Integrating Claude, OpenAI, and open-source models into real applications — auth, rate limits, streaming, cost control, and error handling.",
-    topics: ["Anthropic & OpenAI SDKs", "Streaming responses", "Cost & token management", "Caching strategies"],
+      "Learn how AI moves from a chat window into a real tool, app, form, dashboard, or client workflow.",
+    topics: ["OpenAI & Claude APIs", "Inputs & outputs", "Streaming", "Cost controls"],
   },
   {
     number: "04",
     title: "RAG & Knowledge Systems",
-    duration: "3 weeks",
+    duration: "Weeks 7-8 / 13-16",
     description:
-      "Retrieval-augmented generation from scratch — embeddings, vector databases, chunking strategies, and hybrid search.",
-    topics: ["Embeddings & similarity", "Vector DBs (Pinecone, pgvector)", "Chunking & retrieval", "Re-ranking & context assembly"],
+      "Build assistants that answer from real documents, SOPs, websites, notes, and business knowledge instead of guessing.",
+    topics: ["Embeddings", "Document chunking", "Vector search", "Answer quality"],
   },
   {
     number: "05",
-    title: "AI Agents & Tool Use",
-    duration: "3 weeks",
+    title: "Agents & Automations",
+    duration: "Weeks 9-10 / 17-20",
     description:
-      "Designing agents that can reason across steps, call external tools, and recover from errors without going off the rails.",
-    topics: ["Tool calling & function use", "Agent loops & state", "Claude Agent SDK", "Multi-agent orchestration"],
+      "Design AI workflows that can use tools, trigger actions, summarize information, and support real business operations.",
+    topics: ["Tool calling", "Human review", "Slack/email workflows", "Automation design"],
   },
   {
     number: "06",
-    title: "Production & Deployment",
-    duration: "3 weeks",
+    title: "Production & Capstone",
+    duration: "Weeks 11-12 / 21-24",
     description:
-      "Taking AI features from notebook to shipped — observability, evals, latency optimization, and responsible deployment.",
-    topics: ["Evals & regression testing", "Observability & logging", "Latency & throughput", "Safety & guardrails"],
+      "Scope, build, demo, and package a final AI project that proves you can apply the skills outside the classroom.",
+    topics: ["Project scoping", "Evals", "Deployment basics", "Demo & portfolio"],
   },
 ];
 
 export const universityWhoFor = [
   {
-    title: "Developers new to AI",
+    title: "Beginners who feel behind",
     description:
-      "You can ship software but haven't worked with LLMs. This gets you to production-ready faster than any bootcamp.",
+      "You know AI matters, but the space feels noisy. This gives you a clean path from zero to useful.",
   },
   {
-    title: "Engineers moving into AI roles",
+    title: "Founders and business owners",
     description:
-      "You know the backend. This fills in the model mechanics, tooling, and evaluation practices the job actually requires.",
+      "You want to use AI for operations, content, client work, internal tools, or new service offers.",
   },
   {
-    title: "Founders building AI products",
+    title: "Creatives and service providers",
     description:
-      "Enough depth to make sound architectural decisions — and to hold your engineering team accountable to real quality bars.",
+      "You want practical systems for content, admin work, proposals, research, and repeatable workflows.",
   },
   {
-    title: "Technical career switchers",
+    title: "Early builders and career switchers",
     description:
-      "Coming from data, design, or product? This gives you the engineering foundation to contribute to AI teams immediately.",
+      "You want enough technical confidence to build demos, talk through projects, and create proof of skill.",
   },
 ];
 
 export const universityFeatures = [
-  { icon: "🎯", label: "Project-based learning", detail: "Every module ends with a real build, not a quiz." },
-  { icon: "🔁", label: "Iterative curriculum", detail: "Updated as the field moves — not frozen at a release date." },
-  { icon: "💬", label: "Community access", detail: "Private cohort where you can share work and get feedback." },
-  { icon: "📋", label: "Written SOW & clear expectations", detail: "You'll know exactly what you're getting before you enroll." },
+  { icon: "01", label: "Live guided learning", detail: "Clear lessons, live demos, weekly labs, and structured checkpoints." },
+  { icon: "02", label: "Build-first curriculum", detail: "Every phase pushes toward a workflow, prototype, or capstone asset." },
+  { icon: "03", label: "Business-aware AI", detail: "Learn AI for real use cases: content, operations, clients, and products." },
+  { icon: "04", label: "Capstone proof", detail: "Leave with a project you can demo, use, package, or turn into an offer." },
+];
+
+export const universityCapstones = [
+  "AI content engine",
+  "Client intake assistant",
+  "Lead qualification assistant",
+  "Proposal generator",
+  "Business document chatbot",
+  "SOP knowledge assistant",
+  "Customer support assistant",
+  "AI-powered service dashboard",
+];
+
+export const universityOffer = [
+  {
+    name: "Self-Paced Starter",
+    price: "$297-$497",
+    description: "Recorded lessons, templates, starter prompts, and project examples for students who want to move independently.",
+  },
+  {
+    name: "Builder Cohort",
+    price: "$1,497-$2,500",
+    description: "Live cohort access, labs, reviews, community, recordings, templates, and a capstone build.",
+  },
+  {
+    name: "VIP Build-With-Me",
+    price: "$5,000+",
+    description: "Private support for founders, service providers, and students building a project they plan to sell or deploy.",
+  },
 ];
 
 export const universityFAQ = [
   {
-    question: "When does the curriculum launch?",
+    question: "When does the founding cohort launch?",
     answer:
-      "The first cohort is being finalized now. Join the waitlist and you'll be the first to know the date, price, and what's included.",
+      "The first cohort is being shaped now. Apply for early access and you will get the first look at dates, pricing, syllabus, and enrollment details before it opens publicly.",
   },
   {
     question: "What's the time commitment per week?",
     answer:
-      "Designed for 6–10 hours per week. Heavy enough to build real understanding, light enough to complete alongside a full-time role.",
+      "The fast track is built for 6-10 hours per week. The guided 24-week track is built for 3-5 hours per week, with more room to review and practice.",
   },
   {
     question: "Do I need a computer science background?",
     answer:
-      "No. You need comfort writing code — Python or JavaScript — and curiosity about how things work. The curriculum builds the rest.",
+      "No. The program is beginner-friendly, but it is still a builder cohort. You should be willing to learn tools, follow demos, complete labs, and build a real project.",
   },
   {
     question: "Will there be live sessions or is it self-paced?",
     answer:
-      "A hybrid: async lessons you move through on your schedule, plus optional live office hours for questions and reviews.",
+      "The core cohort is live-guided with recordings, labs, and review. A lighter self-paced version can exist separately for students who want lower-cost access.",
   },
   {
-    question: "What if I already know some AI basics?",
+    question: "What will I have by the end?",
     answer:
-      "Modules are scoped so you can start where you are. If you have solid foundations, you can accelerate through the early material and go deep on agents and production deployment.",
+      "You should leave with a working AI capstone, a clearer AI tool stack, repeatable workflows, prompt systems, and a demo you can use for business, career, or client conversations.",
   },
 ];

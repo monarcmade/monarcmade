@@ -1,11 +1,14 @@
 import type { SiteConfig } from "@/types";
 
+export const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "http://192.168.1.68:3002";
+
 export const siteConfig: SiteConfig = {
   name: "Monarc Made",
   tagline: "AI systems, web development & cloud platforms",
   description:
     "Monarc Made is Luis Cantu's senior-led practice: AI systems, agents, and OpenClaw-style automation, plus modern web development in Next.js and TypeScript, Shopify and web platforms, AWS · Azure · GCP, CI/CD and migrations—scoped in writing and shipped with runbooks.",
-  url: "https://monarcmade.com",
+  url: siteUrl,
   author: "Luis Cantu",
   email: "newtechcantu@gmail.com",
   social: {

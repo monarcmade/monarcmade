@@ -14,9 +14,44 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://192.168.1.68:3002](http://192.168.1.68:3002) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+## Monarc University Applications
+
+The founding cohort form posts to `/api/university/apply` and saves applications to Airtable when these environment variables are present:
+
+```bash
+AIRTABLE_PERSONAL_ACCESS_TOKEN=
+AIRTABLE_UNIVERSITY_BASE_ID=
+AIRTABLE_UNIVERSITY_TABLE_NAME=Applications
+```
+
+`AIRTABLE_UNIVERSITY_TABLE_NAME` can be either the visible table name or the Airtable table ID that starts with `tbl`.
+
+Optional email notifications use Resend:
+
+```bash
+RESEND_API_KEY=
+UNIVERSITY_APPLICATION_NOTIFY_EMAIL=
+UNIVERSITY_APPLICATION_FROM_EMAIL=Monarc University <onboarding@resend.dev>
+```
+
+If the Resend variables are missing, applications still save to Airtable and email is skipped.
+
+Expected Airtable fields:
+
+- `Name`
+- `Email`
+- `Goal`
+- `Track`
+- `Skill Level`
+- `Readiness / Budget`
+- `Project Idea`
+- `Source`
+- `Status`
+- `Submitted At`
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 

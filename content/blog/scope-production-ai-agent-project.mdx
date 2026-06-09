@@ -1,0 +1,109 @@
+---
+title: "How to scope a production AI agent project without wasting budget"
+slug: scope-production-ai-agent-project
+summary: "A practical way to turn an AI idea into a scoped build: users, tools, data boundaries, evals, handoffs, and the first slice worth shipping."
+category: "AI Systems"
+date: "2026-05-05"
+tags: ["AI agents", "Scoping", "Evals", "Automation"]
+audience: "Founders, operators, and product leads who want an AI workflow in production, not another demo."
+offer: "AI readiness audit or fixed-scope agent prototype with eval gates and handoff notes."
+featured: true
+published: true
+---
+
+Most AI agent projects start too wide.
+
+The first prompt is usually some version of "make an assistant for the team." That sounds useful, but it hides the hard parts: what the assistant can touch, who trusts the answer, what happens when it is wrong, and where a human needs to step in.
+
+A production AI project should be scoped like a system, not like a novelty.
+
+## Start with the job, not the model
+
+The model is rarely the first decision. The first decision is the job.
+
+Good starting points sound like this:
+
+- "Turn support tickets into drafted replies with source links and escalation flags."
+- "Review incoming project briefs and identify missing scope, timeline, and risk details."
+- "Search internal docs and produce a deployment checklist for a known app."
+- "Summarize customer calls into CRM updates, tasks, and follow-up drafts."
+
+Each one has an actor, an input, a workflow, and a review point. That is what makes it scannable for scope.
+
+## Define what the agent can touch
+
+Agents become risky when they have vague authority. Before writing code, draw a boundary around tools and data.
+
+You need to know:
+
+- Which systems it can read.
+- Which systems it can write to.
+- Which actions require approval.
+- Which records should never be sent to a model.
+- Which output needs a citation, audit trail, or human sign-off.
+
+This is where many AI builds get real. The value is not only "the model answered." The value is "the system did the useful part while respecting the business rules."
+
+## Pick one first slice
+
+The first slice should be useful even if the broader AI roadmap changes.
+
+A strong first slice usually has:
+
+- One role or team.
+- One repeatable workflow.
+- One source of truth.
+- One clear handoff.
+- One measurable quality bar.
+
+For example, a support triage agent might begin by labeling tickets, finding likely docs, and drafting a response. It should not begin by sending final replies to customers without review.
+
+That gives the team a safe way to see quality, latency, cost, and trust before expanding authority.
+
+## Add evals before the launch push
+
+Evaluation does not have to be academic. It has to be useful.
+
+For a first release, track things like:
+
+- Does the answer cite the right source?
+- Did the agent refuse when data was missing?
+- Did it escalate sensitive cases?
+- Did it create the right task or draft?
+- Would a reviewer send it with minor edits?
+
+You want a small test set of real examples before the system is used on live work. When the model or prompt changes, rerun the set.
+
+## Budget for the handoff
+
+The most expensive AI project is the one nobody can operate after the demo.
+
+Handoff should include:
+
+- Environment and secret setup.
+- Tool permissions.
+- Prompt and model version notes.
+- Eval examples.
+- Known failure modes.
+- Rollback steps.
+- A clear owner for future changes.
+
+If that sounds like normal software delivery, good. Production AI is software delivery.
+
+## A useful first engagement
+
+For most teams, the right first move is not "build the whole AI platform." It is a short readiness and first-slice plan.
+
+That plan should answer:
+
+- What workflow is worth automating first?
+- What data and tools are safe to connect?
+- What does done mean?
+- What needs human review?
+- What should not be automated yet?
+
+If the answer is strong, the build becomes much easier to price and sequence.
+
+## Need this scoped?
+
+Send the workflow, the current systems, the data involved, and what a human does today. Monarc Made can turn that into an AI readiness audit or a fixed-scope first slice.

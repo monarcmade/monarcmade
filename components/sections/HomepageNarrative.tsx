@@ -1,10 +1,18 @@
 "use client";
 
 import { useCallback, useEffect, useId, useRef, useState } from "react";
+import Image from "next/image";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Container, Section } from "@/components/ui/Container";
 import { fadeUpSection, staggerSection, viewportOnce } from "@/lib/motion";
 import { homeNarrativePanels } from "@/data/homeNarrative";
+import { siteImages } from "@/data/siteImages";
+
+const narrativeImages = [
+  { ...siteImages.aiWorkstation, label: "Strategy" },
+  { ...siteImages.productionSystems, label: "Build" },
+  { ...siteImages.contentStudio, label: "Launch" },
+] as const;
 
 export function HomepageNarrative() {
   const reduceMotion = useReducedMotion();
@@ -161,6 +169,30 @@ export function HomepageNarrative() {
                 </button>
               </div>
             </div>
+
+            <motion.div
+              variants={fadeUpSection}
+              className="grid grid-cols-1 gap-3 sm:grid-cols-3"
+              aria-label="Monarc Made work environments"
+            >
+              {narrativeImages.map((image) => (
+                <figure
+                  key={image.src}
+                  className="group relative min-h-40 overflow-hidden rounded-xl border border-(--color-border) bg-(--color-bg-base)"
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    sizes="(min-width: 640px) 28vw, 92vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                  />
+                  <figcaption className="absolute inset-x-0 bottom-0 bg-[linear-gradient(180deg,transparent,rgba(0,0,0,0.72))] px-4 pb-3 pt-10 text-xs font-bold uppercase tracking-[0.14em] text-white">
+                    {image.label}
+                  </figcaption>
+                </figure>
+              ))}
+            </motion.div>
           </motion.div>
         </motion.div>
       </Container>

@@ -1,0 +1,121 @@
+---
+title: "How to rescue a contractor-built app without starting over"
+slug: rescue-contractor-built-app
+summary: "When a shipped app is hard to change, start with stabilization: ownership, deploys, dependencies, data boundaries, defects, and a first safe improvement."
+category: "Rescue Work"
+date: "2026-04-30"
+tags: ["Modernization", "Handoff", "Technical debt", "Delivery"]
+audience: "Founders and operators with a live app that works, but every change feels risky or confusing."
+offer: "Technical rescue audit with codebase review, deployment map, risk register, and first-slice implementation plan."
+featured: false
+published: true
+---
+
+Not every rough app needs a rewrite.
+
+Sometimes the app has a messy codebase, unclear deploys, old dependencies, missing docs, and a few scary bugs - but the business still runs on it. Starting over can be more expensive than stabilizing what exists.
+
+The first move is to make the system understandable.
+
+## Get control of access and ownership
+
+Before touching code, confirm the basics.
+
+You need access to:
+
+- Source code.
+- Hosting.
+- Domain and DNS.
+- Database.
+- Environment variables.
+- Third-party services.
+- Analytics and error tracking.
+- Design or product docs, if they exist.
+
+If the prior contractor owns any of this personally, fix that first. The business should own the system.
+
+## Map how deploys work
+
+Many rescue projects reveal that nobody knows exactly how production gets updated.
+
+Document:
+
+- Which branch deploys.
+- Which service hosts the app.
+- Which environment variables are required.
+- How migrations run.
+- How rollback works.
+- What checks happen after deploy.
+
+This does not need to be fancy. It needs to be repeatable.
+
+## Identify the real risks
+
+Do not label everything "technical debt." That phrase is too broad to act on.
+
+Separate issues into:
+
+- User-facing bugs.
+- Security risks.
+- Deployment risks.
+- Data risks.
+- Performance risks.
+- Maintainability issues.
+- Missing business logic.
+
+Then prioritize by business impact, not developer annoyance.
+
+## Stabilize before improving
+
+The first code change should usually reduce risk.
+
+Examples:
+
+- Add error tracking.
+- Fix a broken deploy path.
+- Document environment setup.
+- Add a small smoke test.
+- Remove a dead integration.
+- Patch a security issue.
+- Fix the highest-impact bug.
+
+This gives the team confidence before larger feature work.
+
+## Decide what not to rewrite
+
+A rescue audit should identify what is worth keeping.
+
+Keep parts that:
+
+- Work for users.
+- Represent correct business logic.
+- Have manageable complexity.
+- Can be improved incrementally.
+
+Rewrite parts that:
+
+- Are actively blocking change.
+- Hide critical data risk.
+- Cannot be tested or understood.
+- Depend on abandoned services.
+
+The best modernization work is selective.
+
+## Create a first-slice plan
+
+The output should be concrete.
+
+A useful first slice might include:
+
+- Fix deployment and environment docs.
+- Add monitoring.
+- Resolve the top two user-facing defects.
+- Clean one risky integration.
+- Add enough tests around one workflow.
+- Write a handoff note for the owner.
+
+That is a better first month than "rewrite the app."
+
+## Need an app rescue plan?
+
+Send the repo, hosting details, known pain points, and what users rely on daily. Monarc Made can review the system and map a stabilization plan before you commit to a rebuild.

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Container, Section } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -12,6 +13,7 @@ import { engagementFormats } from "@/data/homepage";
 import { engagementFormatIcons } from "@/components/engagement/EngagementFormatIcons";
 import { fadeUpSection, staggerSection, viewportOnce } from "@/lib/motion";
 import { portfolioDeliveryNote } from "@/data/samplePortfolio";
+import { siteImages } from "@/data/siteImages";
 
 export function ServicesPageBody() {
   return (
@@ -23,21 +25,39 @@ export function ServicesPageBody() {
             initial={false}
             whileInView="visible"
             viewport={viewportOnce}
-            className="flex flex-col gap-5 md:gap-6 max-w-3xl"
+            className="grid grid-cols-1 items-center gap-7 lg:grid-cols-[minmax(0,0.95fr)_minmax(18rem,0.55fr)] lg:gap-10"
           >
-            <motion.div variants={fadeUpSection}>
-              <SectionHeader
-                eyebrow={servicesPageIntro.eyebrow}
-                title={servicesPageIntro.title}
-                description={servicesPageIntro.description}
-              />
-            </motion.div>
-            <motion.p
+            <div className="flex max-w-3xl flex-col gap-5 md:gap-6">
+              <motion.div variants={fadeUpSection}>
+                <SectionHeader
+                  eyebrow={servicesPageIntro.eyebrow}
+                  title={servicesPageIntro.title}
+                  description={servicesPageIntro.description}
+                />
+              </motion.div>
+              <motion.p
+                variants={fadeUpSection}
+                className="text-xs text-(--color-text-muted) leading-relaxed border-l-2 border-(--color-accent) pl-4 max-w-2xl"
+              >
+                {portfolioDeliveryNote}
+              </motion.p>
+            </div>
+            <motion.figure
               variants={fadeUpSection}
-              className="text-xs text-(--color-text-muted) leading-relaxed border-l-2 border-(--color-accent) pl-4 max-w-2xl"
+              className="relative min-h-[18rem] overflow-hidden rounded-2xl border border-(--color-border) bg-(--color-bg-surface) shadow-[0_18px_48px_rgba(0,0,0,0.32)]"
             >
-              {portfolioDeliveryNote}
-            </motion.p>
+              <Image
+                src={siteImages.productionSystems.src}
+                alt={siteImages.productionSystems.alt}
+                fill
+                priority
+                sizes="(min-width: 1024px) 34vw, 92vw"
+                className="object-cover"
+              />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-[linear-gradient(180deg,transparent,rgba(0,0,0,0.74))] px-5 pb-4 pt-16 text-xs font-semibold uppercase tracking-[0.14em] text-white">
+                Production-ready systems
+              </figcaption>
+            </motion.figure>
           </motion.div>
         </Container>
       </Section>

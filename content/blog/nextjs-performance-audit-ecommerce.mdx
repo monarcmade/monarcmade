@@ -1,0 +1,132 @@
+---
+title: "What a Next.js performance audit should check before an e-commerce rebuild"
+slug: nextjs-performance-audit-ecommerce
+summary: "Before rewriting a storefront, inspect the routes, rendering mode, data dependencies, images, scripts, and conversion-critical flows that actually move speed."
+category: "Web Performance"
+date: "2026-05-04"
+tags: ["Next.js", "E-commerce", "Performance", "Audit"]
+audience: "E-commerce teams seeing slow product pages, weak Core Web Vitals, or rebuild pressure without a clear diagnosis."
+offer: "Performance audit with route-level findings, quick wins, and a rebuild-or-repair recommendation."
+featured: true
+published: true
+---
+
+A slow storefront does not automatically need a rebuild.
+
+Sometimes the problem is image delivery. Sometimes it is third-party scripts. Sometimes product data is fetched in the wrong place. Sometimes the app is fine, but the analytics stack is dragging every key route through mud.
+
+Before spending serious money on a rebuild, audit what is actually happening.
+
+## Start with the money routes
+
+Do not begin with the homepage because it is the prettiest page. Begin with the routes that affect revenue.
+
+Usually that means:
+
+- Product listing pages.
+- Product detail pages.
+- Search results.
+- Cart.
+- Checkout handoff.
+- Collection or category landing pages.
+
+Measure desktop and mobile separately. Mobile is often where the pain is hiding.
+
+## Check rendering mode per route
+
+Next.js gives teams several ways to render a page. That flexibility is useful, but it can also hide expensive choices.
+
+For each route, ask:
+
+- Is this static, dynamic, streamed, or client-heavy?
+- What data blocks the first meaningful render?
+- What can be cached?
+- What changes per user?
+- What changes per request?
+
+A product page and a cart page do not have the same constraints. Treating them the same is how teams end up with slow pages and confusing cache behavior.
+
+## Inspect images and media
+
+Images are still one of the easiest ways to lose performance.
+
+Look for:
+
+- Oversized product images.
+- Missing width and height.
+- Unoptimized hero media.
+- Too many eager images above the fold.
+- Carousels loading assets nobody sees.
+- Bad format choices.
+
+For commerce, image quality matters. The goal is not tiny images. The goal is the right image at the right size at the right time.
+
+## Find third-party script damage
+
+Most storefronts collect scripts over time: analytics, heatmaps, reviews, chat, ad pixels, personalization, A/B testing, affiliate tracking.
+
+Each one may be defensible. Together, they can flatten performance.
+
+Audit:
+
+- Which scripts load on every route.
+- Which scripts block interaction.
+- Which scripts are only needed after consent.
+- Which scripts duplicate tracking.
+- Which scripts belong only on checkout or product pages.
+
+This is often a business conversation, not only a code conversation. Someone needs to decide which scripts are worth the cost.
+
+## Watch the product data path
+
+Slow commerce pages often have unclear data boundaries.
+
+Common issues:
+
+- Product data is fetched more than once.
+- Inventory checks block too much UI.
+- Recommendations block primary content.
+- Search and filtering run too much client-side work.
+- CMS content and catalog content are stitched together late.
+
+The audit should map where data comes from, how often it changes, and what the user needs first.
+
+## Decide repair vs rebuild
+
+A good audit does not always end with "rewrite it."
+
+Repair may be enough when:
+
+- The architecture is sound.
+- The worst issues are assets and scripts.
+- The team can improve route by route.
+- The current platform still matches business needs.
+
+A rebuild becomes more reasonable when:
+
+- The rendering model fights the business.
+- The team cannot ship safely.
+- Data boundaries are tangled beyond repair.
+- Checkout or catalog constraints have changed.
+- The current stack blocks needed features.
+
+## What the audit should deliver
+
+The output should be more than a Lighthouse screenshot.
+
+Useful deliverables include:
+
+- Route-by-route findings.
+- Performance budget recommendations.
+- Script inventory.
+- Image/media fixes.
+- Data and caching notes.
+- Quick wins.
+- Rebuild-or-repair recommendation.
+- A first implementation slice.
+
+That is enough to make the next dollar useful.
+
+## Need the audit?
+
+Send the storefront URL, current stack, analytics access if available, and the routes that matter most. Monarc Made can turn that into a focused performance audit and implementation plan.

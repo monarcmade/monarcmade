@@ -91,7 +91,8 @@ export function Hero() {
   const reduceMotion = useReducedMotion();
 
   useEffect(() => {
-    setMounted(true);
+    const id = window.requestAnimationFrame(() => setMounted(true));
+    return () => window.cancelAnimationFrame(id);
   }, []);
 
   useEffect(() => {

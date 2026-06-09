@@ -1,0 +1,5 @@
+Slide size: 1280x720.
+Palette: deep ink #081018, cyan #00A6D6, gold #D6A84A, paper #F4F8FB, muted #8090A0.
+Typography: Avenir Next for labels/body, Georgia for editorial emphasis.
+Grammar: editorial dark-first deck, large claims, thin rules, simple diagrams, no fake logos.
+Thumbnails: high contrast, 3-5 word promise, face/photo placeholder avoided until user provides a headshot.

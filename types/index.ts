@@ -39,6 +39,29 @@ export interface WorkPost extends WorkFrontmatter {
 /** Case list / cards — omit MDX body so client bundles stay small. */
 export type WorkPostSummary = Omit<WorkPost, "content">;
 
+/* --- Blog / Resources --- */
+
+export interface BlogFrontmatter {
+  title: string;
+  slug: string;
+  summary: string;
+  category: string;
+  date: string;
+  tags: string[];
+  audience: string;
+  offer: string;
+  featured?: boolean;
+  published?: boolean;
+  ogImage?: string;
+}
+
+export interface BlogPost extends BlogFrontmatter {
+  readingTime: string;
+  content: string;
+}
+
+export type BlogPostSummary = Omit<BlogPost, "content">;
+
 /* --- Services --- */
 
 export interface ServiceFeature {
@@ -137,6 +160,7 @@ export type TrackingEvent =
   | "cta_click"
   | "project_view"
   | "contact_submit"
+  | "university_apply"
   | "service_click"
   | "nav_click"
   | "external_link";

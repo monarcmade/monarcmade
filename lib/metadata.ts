@@ -18,7 +18,7 @@ export function buildMetadata(options: PageMetadataOptions = {}): Metadata {
     canonical,
   } = options;
 
-  const fullTitle = title
+  const shareTitle = title
     ? `${title} — ${siteConfig.name}`
     : siteConfig.og.title;
 
@@ -27,7 +27,7 @@ export function buildMetadata(options: PageMetadataOptions = {}): Metadata {
     : `${siteConfig.url}${image}`;
 
   return {
-    title: fullTitle,
+    title: title ?? siteConfig.og.title,
     description,
     metadataBase: new URL(siteConfig.url),
     ...(canonical && { alternates: { canonical } }),
@@ -35,7 +35,7 @@ export function buildMetadata(options: PageMetadataOptions = {}): Metadata {
       ? { index: false, follow: false }
       : { index: true, follow: true },
     openGraph: {
-      title: fullTitle,
+      title: shareTitle,
       description,
       url: canonical ?? siteConfig.url,
       siteName: siteConfig.name,
@@ -44,7 +44,7 @@ export function buildMetadata(options: PageMetadataOptions = {}): Metadata {
           url: absoluteImage,
           width: 1200,
           height: 630,
-          alt: fullTitle,
+          alt: shareTitle,
         },
       ],
       locale: "en_US",
@@ -52,7 +52,7 @@ export function buildMetadata(options: PageMetadataOptions = {}): Metadata {
     },
     twitter: {
       card: "summary_large_image",
-      title: fullTitle,
+      title: shareTitle,
       description,
       images: [absoluteImage],
       creator: "@lcantu",

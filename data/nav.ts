@@ -3,6 +3,7 @@ import type { NavLink } from "@/types";
 export const navLinks: NavLink[] = [
   { label: "Projects", href: "/projects" },
   { label: "Services", href: "/services" },
+  { label: "Blog", href: "/blog" },
   { label: "University", href: "/university" },
   { label: "About", href: "/about" },
 ];
@@ -13,6 +14,7 @@ export const footerLinks: { group: string; links: NavLink[] }[] = [
     links: [
       { label: "Projects", href: "/projects" },
       { label: "Services", href: "/services" },
+      { label: "Blog", href: "/blog" },
       { label: "University", href: "/university" },
       { label: "About", href: "/about" },
       { label: "Contact", href: "/contact" },

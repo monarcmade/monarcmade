@@ -1,0 +1,129 @@
+---
+title: "AWS hosting cleanup checklist for small teams before the next launch"
+slug: aws-hosting-cleanup-checklist
+summary: "A practical checklist for teams whose hosting works until it suddenly does not: DNS, TLS, environments, backups, deploys, logs, cost, and ownership."
+category: "Cloud"
+date: "2026-05-02"
+tags: ["AWS", "Hosting", "DevOps", "Runbooks"]
+audience: "Small teams with a live site or app on AWS that nobody fully wants to touch before launch day."
+offer: "Hosting cleanup audit with deployment notes, risk list, and a practical runbook."
+featured: false
+published: true
+---
+
+Many hosting setups are not broken. They are just undocumented.
+
+That is fine until launch week, a DNS change, a certificate issue, a deployment failure, or a cost spike turns the setup into a guessing game.
+
+Before the next launch, clean up the basics.
+
+## Know what runs where
+
+Start with an inventory.
+
+Write down:
+
+- Domains and DNS provider.
+- AWS account and region.
+- Hosting service.
+- Database or storage services.
+- CDN or caching layer.
+- Third-party services.
+- Deployment path.
+- Who has access.
+
+If this cannot be answered in one page, the team is carrying avoidable risk.
+
+## Check DNS and TLS
+
+DNS and certificates are boring until they are the outage.
+
+Review:
+
+- Who controls the domain.
+- Which nameservers are authoritative.
+- Which records point to production.
+- Which records are stale.
+- Certificate expiration.
+- Redirect behavior between www and apex.
+- HTTP to HTTPS behavior.
+
+This is especially important when a contractor, old agency, or former employee set things up.
+
+## Separate environments clearly
+
+Production should not be a mystery.
+
+At minimum, know:
+
+- What is production.
+- What is staging or preview.
+- Which credentials belong to which environment.
+- Whether staging can send real email or payments.
+- Whether test data can touch production.
+
+Small teams do not need huge platform engineering overhead. They do need enough separation to avoid expensive mistakes.
+
+## Make deploys repeatable
+
+A deploy should not depend on the one person who remembers the command.
+
+Document:
+
+- How code gets built.
+- How code gets deployed.
+- Required environment variables.
+- Rollback steps.
+- Post-deploy checks.
+- Who approves production changes.
+
+If a deploy cannot be repeated from notes, the system is not ready for a serious launch.
+
+## Confirm backups and recovery
+
+Backups are only useful if recovery has been considered.
+
+Ask:
+
+- What data is backed up?
+- How often?
+- Where are backups stored?
+- Who can restore them?
+- Has a restore been tested?
+- What is acceptable data loss?
+
+For many small teams, even a simple documented backup and restore path is a major improvement.
+
+## Add enough observability
+
+You do not need a huge observability stack on day one, but you do need signals.
+
+Useful basics:
+
+- Application logs.
+- Error tracking.
+- Uptime checks.
+- Deploy history.
+- Resource usage.
+- Cost monitoring.
+
+The point is to know whether the system is healthy without waiting for a customer to complain.
+
+## Clean up cost surprises
+
+AWS cost issues often come from forgotten resources or unclear ownership.
+
+Review:
+
+- Unused instances.
+- Old snapshots.
+- Oversized databases.
+- Unattached volumes.
+- Duplicate environments.
+- Services nobody recognizes.
+
+The goal is not only a lower bill. The goal is knowing what the bill represents.
+
+## Need a hosting cleanup?
+
+Send the AWS account shape, current deploy path, and the launch date. Monarc Made can produce a short risk list, cleanup plan, and runbook your team can actually use.

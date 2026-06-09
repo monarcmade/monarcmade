@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    "Ai university cohort/**",
+    "Software developent Cohort/**",
+    "outputs/**",
   ]),
 ]);
 

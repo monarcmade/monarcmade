@@ -37,6 +37,9 @@ export const analytics = {
   contactSubmit: () =>
     track("contact_submit"),
 
+  universityApply: () =>
+    track("university_apply"),
+
   serviceClick: (label: string) =>
     track("service_click", { label }),
 

@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
 import { UniversityPageBody } from "@/components/sections/UniversityPageBody";
+import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "University",
+  title: "Monarc University",
   description:
-    "Monarc Made University: a structured AI curriculum from first principles to production. Learn LLMs, RAG, agents, and deployment — built for developers who want to ship real things.",
-  canonical: "https://monarcmade.com/university",
+    "Monarc University is a guided AI builder cohort for beginners, founders, creatives, and professionals who want to learn AI from zero and ship a real capstone project.",
+  canonical: `${siteConfig.url}/university`,
 });
 
 export default function UniversityPage() {

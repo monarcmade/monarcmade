@@ -1,0 +1,11 @@
+import { style, addText, rect, line, bg, kicker, title, subtitle, footer, pill, note } from './common.mjs';
+
+export async function slide05(presentation, ctx) {
+ const slide = presentation.slides.add();
+ bg(slide, ctx);
+ kicker(slide, ctx, "VIDEO FLOW");
+ title(slide, ctx, "Teach for six minutes. Sell for thirty seconds.", 94, 40); subtitle(slide, ctx, "Retention comes from useful sequencing. The pitch works because the viewer already got value.", 220, 680); rect(slide, ctx, 75,350,142,116,'#0D2532',{lineColor:'#1B5366',weight:1}); addText(slide, ctx, "0:00", 96,374,100,28,{size:24,bold:true,face:style.serif,color:style.gold}); addText(slide, ctx, "Hook", 96,414,90,26,{size:15,bold:true,color:style.ink});rect(slide, ctx, 250,350,142,116,'#0D2532',{lineColor:'#1B5366',weight:1}); addText(slide, ctx, "0:30", 271,374,100,28,{size:24,bold:true,face:style.serif,color:style.cyan}); addText(slide, ctx, "credibility", 271,414,90,26,{size:15,bold:true,color:style.ink});rect(slide, ctx, 425,350,142,116,'#0D2532',{lineColor:'#1B5366',weight:1}); addText(slide, ctx, "1:15", 446,374,100,28,{size:24,bold:true,face:style.serif,color:style.cyan}); addText(slide, ctx, "roadmap", 446,414,90,26,{size:15,bold:true,color:style.ink});rect(slide, ctx, 600,350,142,116,'#0D2532',{lineColor:'#1B5366',weight:1}); addText(slide, ctx, "3:30", 621,374,100,28,{size:24,bold:true,face:style.serif,color:style.cyan}); addText(slide, ctx, "examples", 621,414,90,26,{size:15,bold:true,color:style.ink});rect(slide, ctx, 775,350,142,116,'#0D2532',{lineColor:'#1B5366',weight:1}); addText(slide, ctx, "5:45", 796,374,100,28,{size:24,bold:true,face:style.serif,color:style.cyan}); addText(slide, ctx, "mistakes", 796,414,90,26,{size:15,bold:true,color:style.ink});rect(slide, ctx, 950,350,142,116,'#0D2532',{lineColor:'#1B5366',weight:1}); addText(slide, ctx, "6:30", 971,374,100,28,{size:24,bold:true,face:style.serif,color:style.cyan}); addText(slide, ctx, "CTA", 971,414,90,26,{size:15,bold:true,color:style.ink}); addText(slide, ctx, 'Retention rule: no long intro, no “what’s up guys” ramble, no pitch before value.', 78,540,760,34,{size:20,color:style.cyan2});
+ note(slide, ctx, "Use this as the recording structure. Do not over-explain. Keep momentum.");
+ footer(slide, ctx, 5);
+ return slide;
+}

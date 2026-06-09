@@ -1,0 +1,6 @@
+Task mode: create
+Primary deck-profile: gtm-growth
+Secondary gates: engineering-platform clarity, consumer social packaging
+Required proof objects: audience pain map, AI learning roadmap, offer ladder, recording structure, CTA bridge
+Source/asset requirements: no external logos or unverified brand marks; Monarc Made / Monarc University text-only brand cues
+Known missing inputs: final course modules, final price, launch date. Use professional starter assumptions and mark them editable.
