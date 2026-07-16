@@ -19,6 +19,7 @@ export function Nav() {
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 20);
+    handler();
     window.addEventListener("scroll", handler, { passive: true });
     return () => window.removeEventListener("scroll", handler);
   }, []);
@@ -38,8 +39,10 @@ export function Nav() {
     <header
       role="banner"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-[color-mix(in_oklab,var(--color-bg-base)_92%,transparent)] backdrop-blur-md border-b border-(--color-border)"
+        menuOpen
+          ? "bg-(--color-bg-base) border-b border-(--color-border) shadow-[0_10px_32px_rgba(0,0,0,0.24)]"
+          : scrolled
+          ? "bg-[color-mix(in_oklab,var(--color-bg-base)_96%,transparent)] backdrop-blur-md border-b border-(--color-border)"
           : "bg-transparent"
       }`}
     >
@@ -127,7 +130,7 @@ export function Nav() {
         role="dialog"
         aria-label="Mobile navigation"
         aria-modal="true"
-        className={`md:hidden fixed inset-0 top-16 bg-(--color-bg-base) z-40 transition-all duration-300 ${
+        className={`md:hidden fixed inset-0 top-16 z-40 overflow-y-auto border-t border-(--color-border) bg-(--color-bg-base) shadow-[0_20px_60px_rgba(0,0,0,0.42)] transition-[opacity,visibility] duration-300 ${
           menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
