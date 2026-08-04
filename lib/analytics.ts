@@ -7,18 +7,29 @@
 
 import type { TrackingEvent, TrackingPayload } from "@/types";
 
-/* Replace this with your analytics provider's track call */
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 function sendEvent(payload: TrackingPayload): void {
   if (process.env.NODE_ENV !== "production") {
     console.log("[analytics]", payload);
     return;
   }
-  /* Example: Plausible
-  window.plausible?.(payload.event, { props: payload });
-  */
-  /* Example: PostHog
-  window.posthog?.capture(payload.event, payload);
-  */
+
+  if (typeof window === "undefined" || typeof window.gtag !== "function") {
+    return;
+  }
+
+  window.gtag("event", payload.event, {
+    event_category: "site_engagement",
+    event_label: payload.label ?? payload.slug ?? payload.href,
+    label: payload.label,
+    href: payload.href,
+    slug: payload.slug,
+  });
 }
 
 export function track(event: TrackingEvent, data?: Omit<TrackingPayload, "event">): void {

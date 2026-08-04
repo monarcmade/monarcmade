@@ -40,6 +40,16 @@ UNIVERSITY_APPLICATION_FROM_EMAIL=Monarc University <onboarding@resend.dev>
 
 If the Resend variables are missing, applications still save to Airtable and email is skipped.
 
+## Analytics
+
+Google Analytics 4 is wired through the global layout and sends page views plus the existing custom funnel events.
+
+```bash
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-MTCD7RHWJT
+```
+
+The measurement ID is public by design. Set this value in your deployment environment if you want to override the default in code.
+
 Expected Airtable fields:
 
 - `Name`

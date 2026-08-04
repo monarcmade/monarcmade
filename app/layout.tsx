@@ -4,6 +4,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { ChatWidget } from "@/components/layout/ChatWidget";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { siteConfig } from "@/data/site";
 import "./globals.css";
 
@@ -111,6 +112,7 @@ export default function RootLayout({
           </main>
           <Footer />
           <ChatWidget />
+          <GoogleAnalytics />
         </ThemeProvider>
       </body>
     </html>
