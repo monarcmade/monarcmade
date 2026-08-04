@@ -32,6 +32,8 @@ export const footerLinks: { group: string; links: NavLink[] }[] = [
     group: "Legal",
     links: [
       { label: "Privacy Policy", href: "/privacy" },
+      { label: "Terms of Service", href: "/terms" },
+      { label: "Refund Policy", href: "/refund-policy" },
     ],
   },
 ];
