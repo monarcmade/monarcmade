@@ -39,6 +39,7 @@ UNIVERSITY_APPLICATION_FROM_EMAIL=Monarc University <onboarding@resend.dev>
 ```
 
 If the Resend variables are missing, applications still save to Airtable and email is skipped.
+When Resend is configured, the app sends an internal notification to `UNIVERSITY_APPLICATION_NOTIFY_EMAIL` and an applicant confirmation email to the submitted address.
 
 ## Analytics
 

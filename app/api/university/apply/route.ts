@@ -159,8 +159,9 @@ async function sendApplicationEmail(application: UniversityApplication, recordId
   const apiKey = process.env.RESEND_API_KEY;
   const notifyTo = process.env.UNIVERSITY_APPLICATION_NOTIFY_EMAIL;
   const from = process.env.UNIVERSITY_APPLICATION_FROM_EMAIL || "Monarc University <onboarding@resend.dev>";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://monarcmade.com";
 
-  if (!apiKey || !notifyTo) return;
+  if (!apiKey) return;
 
   const fields = [
     ["Name", application.name],
@@ -176,18 +177,46 @@ async function sendApplicationEmail(application: UniversityApplication, recordId
     ["Airtable Record", recordId || "Created"],
   ];
 
-  const htmlRows = fields
-    .map(
-      ([label, value]) => `
+  if (notifyTo) {
+    const htmlRows = fields
+      .map(
+        ([label, value]) => `
         <tr>
           <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;font-weight:700;vertical-align:top;">${escapeHtml(label)}</td>
           <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;vertical-align:top;">${escapeHtml(value)}</td>
         </tr>
       `
-    )
-    .join("");
+      )
+      .join("");
 
-  const response = await fetch("https://api.resend.com/emails", {
+    const response = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from,
+        to: notifyTo,
+        subject: `New Monarc University application: ${application.name}`,
+        reply_to: application.email,
+        html: `
+          <div style="font-family:Arial,sans-serif;line-height:1.5;color:#111827;">
+            <h1 style="font-size:20px;margin:0 0 12px;">New Monarc University application</h1>
+            <table style="border-collapse:collapse;width:100%;max-width:720px;border:1px solid #e5e7eb;">
+              <tbody>${htmlRows}</tbody>
+            </table>
+          </div>
+        `,
+      }),
+    });
+
+    if (!response.ok) {
+      console.error("University application email failed", await response.text().catch(() => response.statusText));
+    }
+  }
+
+  const applicantResponse = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
@@ -195,22 +224,47 @@ async function sendApplicationEmail(application: UniversityApplication, recordId
     },
     body: JSON.stringify({
       from,
-      to: notifyTo,
-      subject: `New Monarc University application: ${application.name}`,
-      reply_to: application.email,
+      to: application.email,
+      subject: "Your Monarc University application was received",
+      ...(notifyTo ? { reply_to: notifyTo } : {}),
       html: `
-        <div style="font-family:Arial,sans-serif;line-height:1.5;color:#111827;">
-          <h1 style="font-size:20px;margin:0 0 12px;">New Monarc University application</h1>
-          <table style="border-collapse:collapse;width:100%;max-width:720px;border:1px solid #e5e7eb;">
-            <tbody>${htmlRows}</tbody>
-          </table>
+        <div style="font-family:Arial,sans-serif;line-height:1.55;color:#111827;max-width:640px;">
+          <h1 style="font-size:22px;margin:0 0 12px;">Your Monarc University application was received</h1>
+          <p style="margin:0 0 14px;">Hi ${escapeHtml(application.name)},</p>
+          <p style="margin:0 0 14px;">
+            Thanks for applying to the Monarc University founding cohort. Your application is in the review queue now.
+          </p>
+          <div style="border:1px solid #e5e7eb;border-radius:12px;padding:16px;margin:18px 0;background:#f9fafb;">
+            <p style="margin:0 0 8px;font-weight:700;">Application snapshot</p>
+            <p style="margin:0 0 6px;"><strong>Goal:</strong> ${escapeHtml(goalLabels[application.goal] || application.goal)}</p>
+            <p style="margin:0 0 6px;"><strong>Preferred track:</strong> ${escapeHtml(application.track ? trackLabels[application.track] || application.track : "Not sure yet")}</p>
+            <p style="margin:0;"><strong>Readiness / budget:</strong> ${escapeHtml(application.budget ? budgetLabels[application.budget] || application.budget : "Not provided")}</p>
+          </div>
+          <h2 style="font-size:16px;margin:18px 0 8px;">What happens next</h2>
+          <ol style="margin:0 0 18px;padding-left:20px;">
+            <li style="margin-bottom:8px;">I review your goal, readiness, preferred track, and project idea.</li>
+            <li style="margin-bottom:8px;">If it looks like a good fit, you will get next-step details about dates, pricing, and cohort format.</li>
+            <li>While you wait, start with the AI from zero roadmap so the cohort path feels familiar.</li>
+          </ol>
+          <p style="margin:0 0 16px;">
+            <a href="${siteUrl}/blog/how-id-learn-ai-from-zero-in-2026" style="color:#0369a1;font-weight:700;">Read the AI from zero roadmap</a>
+          </p>
+          <p style="margin:0 0 16px;">
+            <a href="${siteUrl}/university" style="color:#0369a1;font-weight:700;">Review Monarc University</a>
+          </p>
+          <p style="margin:18px 0 0;color:#4b5563;font-size:14px;">
+            If anything about your application changes, reply to this email with the update.
+          </p>
         </div>
       `,
     }),
   });
 
-  if (!response.ok) {
-    console.error("University application email failed", await response.text().catch(() => response.statusText));
+  if (!applicantResponse.ok) {
+    console.error(
+      "University applicant confirmation email failed",
+      await applicantResponse.text().catch(() => applicantResponse.statusText)
+    );
   }
 }
 
