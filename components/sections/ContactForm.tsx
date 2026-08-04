@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { analytics } from "@/lib/analytics";
 import { contactFormCopy } from "@/data/contactPage";
 
@@ -13,6 +13,7 @@ type FormState = "idle" | "loading" | "success" | "error";
   The form structure intentionally matches what Resend expects.
 */
 export function ContactForm() {
+  const hasStarted = useRef(false);
   const [state, setState] = useState<FormState>("idle");
   const [formData, setFormData] = useState({
     name: "",
@@ -25,6 +26,10 @@ export function ContactForm() {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
+    if (!hasStarted.current) {
+      hasStarted.current = true;
+      analytics.contactFormStart();
+    }
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 

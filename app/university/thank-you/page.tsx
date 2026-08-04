@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { ThankYouViewTracker } from "@/components/analytics/ThankYouViewTracker";
 import { Button } from "@/components/ui/Button";
 import { Container, Section } from "@/components/ui/Container";
 import { buildMetadata } from "@/lib/metadata";
@@ -46,6 +47,7 @@ const resources = [
 export default function UniversityThankYouPage() {
   return (
     <div className="inner-page">
+      <ThankYouViewTracker page="university_application" />
       <Section>
         <Container size="lg">
           <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-14 items-start">

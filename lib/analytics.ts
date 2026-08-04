@@ -25,10 +25,12 @@ function sendEvent(payload: TrackingPayload): void {
 
   window.gtag("event", payload.event, {
     event_category: "site_engagement",
-    event_label: payload.label ?? payload.slug ?? payload.href,
+    event_label: payload.label ?? payload.section ?? payload.slug ?? payload.href,
     label: payload.label,
     href: payload.href,
     slug: payload.slug,
+    section: payload.section,
+    page: payload.page,
   });
 }
 
@@ -50,6 +52,18 @@ export const analytics = {
 
   universityApply: () =>
     track("university_apply"),
+
+  universityApplyStart: () =>
+    track("university_apply_start", { label: "founding_cohort_application" }),
+
+  contactFormStart: () =>
+    track("contact_form_start", { label: "contact_form" }),
+
+  sectionView: (section: string, page: string) =>
+    track("section_view", { section, page }),
+
+  thankYouView: (page: string) =>
+    track("thank_you_view", { page }),
 
   serviceClick: (label: string) =>
     track("service_click", { label }),

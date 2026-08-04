@@ -161,6 +161,10 @@ export type TrackingEvent =
   | "project_view"
   | "contact_submit"
   | "university_apply"
+  | "university_apply_start"
+  | "contact_form_start"
+  | "section_view"
+  | "thank_you_view"
   | "service_click"
   | "nav_click"
   | "external_link";
@@ -170,4 +174,6 @@ export interface TrackingPayload {
   label?: string;
   href?: string;
   slug?: string;
+  section?: string;
+  page?: string;
 }

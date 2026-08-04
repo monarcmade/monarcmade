@@ -5,6 +5,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { BlogRelated } from "@/components/blog/BlogRelated";
 import { CTABlock } from "@/components/sections/CTABlock";
 import { Badge } from "@/components/ui/Badge";
+import { Button } from "@/components/ui/Button";
 import { Container, Section } from "@/components/ui/Container";
 import { getBlogPost, getBlogSlugs, getRelatedBlogPosts, formatBlogDate } from "@/lib/blog";
 import { buildMetadata } from "@/lib/metadata";
@@ -108,12 +109,13 @@ export default async function BlogPostPage({ params }: Props) {
             <p className="text-sm md:text-base text-(--color-text-secondary) leading-relaxed m-0">
               Send Monarc Made the current stack, the constraint, and what has to move. The first reply can map whether this is an audit, migration, build, or advisory engagement.
             </p>
-            <a
+            <Button
+              label="Start the brief"
               href="/contact"
-              className="inline-flex mt-5 rounded-lg bg-(--color-accent) px-5 py-2.5 text-sm font-semibold text-(--color-text-inverse) hover:bg-(--color-accent-dim) transition-colors focus-visible:outline-2 focus-visible:outline-(--color-accent) focus-visible:outline-offset-3"
-            >
-              Start the brief
-            </a>
+              size="sm"
+              className="mt-5"
+              trackingLabel={`blog_inline_start_brief_${post.slug}`}
+            />
           </div>
         </Container>
       </Section>

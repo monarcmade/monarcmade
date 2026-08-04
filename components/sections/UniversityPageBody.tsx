@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import { FunnelViewTracker } from "@/components/analytics/FunnelViewTracker";
 import { Container, Section } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Badge } from "@/components/ui/Badge";
@@ -29,6 +30,7 @@ export function UniversityPageBody() {
     <>
       {/* Hero */}
       <Section>
+        <FunnelViewTracker page="university" section="hero" />
         <Container size="lg">
           <motion.div
             variants={staggerSection}
@@ -83,6 +85,7 @@ export function UniversityPageBody() {
 
       {/* Why */}
       <Section className="bg-(--color-bg-surface) border-y border-(--color-border)">
+        <FunnelViewTracker page="university" section="why" />
         <Container size="lg">
           <motion.div
             variants={staggerSection}
@@ -120,6 +123,7 @@ export function UniversityPageBody() {
 
       {/* Tracks */}
       <Section>
+        <FunnelViewTracker page="university" section="tracks" />
         <Container size="lg">
           <motion.div
             variants={staggerSection}
@@ -166,6 +170,7 @@ export function UniversityPageBody() {
 
       {/* Curriculum */}
       <Section id="curriculum" className="bg-[linear-gradient(180deg,var(--color-bg-base)_0%,var(--section-band-mid-soft)_50%,var(--color-bg-base)_100%)]">
+        <FunnelViewTracker page="university" section="curriculum" />
         <Container size="lg">
           <motion.div
             variants={staggerSection}
@@ -219,6 +224,7 @@ export function UniversityPageBody() {
 
       {/* Capstone */}
       <Section>
+        <FunnelViewTracker page="university" section="capstone" />
         <Container size="lg">
           <motion.div
             variants={staggerSection}
@@ -282,6 +288,7 @@ export function UniversityPageBody() {
 
       {/* Offer */}
       <Section>
+        <FunnelViewTracker page="university" section="offer" />
         <Container size="lg">
           <motion.div
             variants={staggerSection}
@@ -342,6 +349,7 @@ export function UniversityPageBody() {
 
       {/* Application */}
       <Section id="waitlist" className="bg-(--color-bg-surface) border-t border-(--color-border)">
+        <FunnelViewTracker page="university" section="application" />
         <Container size="lg">
           <motion.div
             variants={staggerSection}
@@ -463,6 +471,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 
 function CohortApplicationForm() {
   const router = useRouter();
+  const hasStarted = useRef(false);
   const [status, setStatus] = useState<"idle" | "loading" | "submitted" | "error">("idle");
   const [error, setError] = useState("");
   const [formData, setFormData] = useState({
@@ -481,6 +490,10 @@ function CohortApplicationForm() {
   function handleChange(
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) {
+    if (!hasStarted.current) {
+      hasStarted.current = true;
+      analytics.universityApplyStart();
+    }
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
