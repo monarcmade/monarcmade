@@ -16,6 +16,8 @@ import {
   universityWhy,
   universityStats,
   universityTracks,
+  universitySchedule,
+  universityTimeline,
   universityModules,
   universityWhoFor,
   universityFeatures,
@@ -54,6 +56,24 @@ export function UniversityPageBody() {
             <motion.div variants={fadeUpSection} className="flex flex-wrap justify-center gap-3 pt-2">
               <Button label="Apply for the cohort" href="#waitlist" variant="primary" size="lg" trackingLabel="university_hero_apply" />
               <Button label="See the curriculum" href="#curriculum" variant="secondary" size="lg" trackingLabel="university_hero_curriculum" />
+            </motion.div>
+            <motion.div
+              variants={fadeUpSection}
+              className="grid w-full max-w-3xl grid-cols-1 sm:grid-cols-3 gap-3 pt-1 text-left"
+              aria-label="Founding cohort dates"
+            >
+              <div className="rounded-xl border border-(--color-border) bg-(--color-bg-surface) px-4 py-3">
+                <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-text-muted)">Kickoff</p>
+                <p className="mt-1 text-sm font-semibold text-(--color-text-primary)">{universitySchedule.kickoffDate}</p>
+              </div>
+              <div className="rounded-xl border border-(--color-border) bg-(--color-bg-surface) px-4 py-3">
+                <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-text-muted)">Apply by</p>
+                <p className="mt-1 text-sm font-semibold text-(--color-text-primary)">{universitySchedule.priorityApplicationDeadline}</p>
+              </div>
+              <div className="rounded-xl border border-(--color-border) bg-(--color-bg-surface) px-4 py-3">
+                <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-text-muted)">Onboarding</p>
+                <p className="mt-1 text-sm font-semibold text-(--color-text-primary)">{universitySchedule.onboardingWeek}</p>
+              </div>
             </motion.div>
             <motion.div variants={fadeUpSection} className="grid grid-cols-3 gap-3 w-full max-w-2xl pt-6">
               {universityStats.map((stat) => (
@@ -369,6 +389,18 @@ export function UniversityPageBody() {
                 The first cohort will be intentionally small. This application helps sort serious students by goal, pace, readiness, and the kind of AI project they want to build.
               </p>
               <div className="rounded-2xl bg-(--color-bg-base) border border-(--color-border) p-5 text-left">
+                <p className="text-sm font-bold text-(--color-text-primary)">Founding cohort timeline</p>
+                <div className="mt-4 flex flex-col divide-y divide-(--color-border)">
+                  {universityTimeline.map((item) => (
+                    <div key={item.label} className="py-3 first:pt-0 last:pb-0">
+                      <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-accent)">{item.label}</p>
+                      <p className="mt-1 text-sm font-semibold text-(--color-text-primary)">{item.date}</p>
+                      <p className="mt-1 text-xs leading-relaxed text-(--color-text-secondary)">{item.detail}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="rounded-2xl bg-(--color-bg-base) border border-(--color-border) p-5 text-left">
                 <p className="text-sm font-bold text-(--color-text-primary)">Good fit signals</p>
                 <ul className="mt-3 flex flex-col gap-2 text-sm text-(--color-text-secondary)">
                   <li>Clear reason for learning AI</li>
@@ -530,7 +562,7 @@ function CohortApplicationForm() {
         <span className="text-4xl" aria-hidden="true">✓</span>
         <h3 className="text-xl font-bold text-(--color-text-primary)">Application noted.</h3>
         <p className="max-w-md text-sm text-(--color-text-secondary) leading-relaxed">
-          Thank you for applying. You will hear back with cohort details, fit, pricing, and next steps before the founding cohort opens publicly.
+          Thank you for applying. You will hear back with cohort fit, payment details, and next steps before onboarding week starts.
         </p>
         <button
           onClick={() => {
@@ -705,7 +737,7 @@ function CohortApplicationForm() {
       )}
 
       <p className="text-center text-xs text-(--color-text-muted)">
-        Applications are reviewed manually for fit before enrollment opens.
+        Priority applications are due {universitySchedule.priorityApplicationDeadline}. The founding cohort starts {universitySchedule.kickoffDate}.
       </p>
     </form>
   );

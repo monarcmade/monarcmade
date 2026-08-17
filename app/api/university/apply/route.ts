@@ -1,3 +1,5 @@
+import { universitySchedule } from "@/data/university";
+
 type UniversityApplication = {
   name: string;
   email: string;
@@ -232,7 +234,7 @@ async function sendApplicationEmail(application: UniversityApplication, recordId
           <h1 style="font-size:22px;margin:0 0 12px;">Your Monarc University application was received</h1>
           <p style="margin:0 0 14px;">Hi ${escapeHtml(application.name)},</p>
           <p style="margin:0 0 14px;">
-            Thanks for applying to the Monarc University founding cohort. Your application is in the review queue now.
+            Thanks for applying to the Monarc University founding cohort. Your application is in the review queue now. The founding cohort kicks off on ${universitySchedule.kickoffDate}.
           </p>
           <div style="border:1px solid #e5e7eb;border-radius:12px;padding:16px;margin:18px 0;background:#f9fafb;">
             <p style="margin:0 0 8px;font-weight:700;">Application snapshot</p>
@@ -242,9 +244,9 @@ async function sendApplicationEmail(application: UniversityApplication, recordId
           </div>
           <h2 style="font-size:16px;margin:18px 0 8px;">What happens next</h2>
           <ol style="margin:0 0 18px;padding-left:20px;">
-            <li style="margin-bottom:8px;">I review your goal, readiness, preferred track, and project idea.</li>
-            <li style="margin-bottom:8px;">If it looks like a good fit, you will get next-step details about dates, pricing, and cohort format.</li>
-            <li>While you wait, start with the AI from zero roadmap so the cohort path feels familiar.</li>
+            <li style="margin-bottom:8px;">I review your goal, readiness, preferred track, and project idea. Priority applications are due ${universitySchedule.priorityApplicationDeadline}.</li>
+            <li style="margin-bottom:8px;">If it looks like a good fit, you will get next-step details about cohort format and payment. Accepted students should lock their seat by ${universitySchedule.paymentDeadline}.</li>
+            <li>While you wait, start with the AI from zero roadmap before onboarding week, ${universitySchedule.onboardingWeek}.</li>
           </ol>
           <p style="margin:0 0 16px;">
             <a href="${siteUrl}/blog/how-id-learn-ai-from-zero-in-2026" style="color:#0369a1;font-weight:700;">Read the AI from zero roadmap</a>

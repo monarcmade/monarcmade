@@ -18,6 +18,36 @@ export const universityStats = [
   { value: "1", label: "shipped capstone" },
 ];
 
+export const universitySchedule = {
+  kickoffDate: "Monday, September 28, 2026",
+  priorityApplicationDeadline: "Friday, September 11, 2026",
+  paymentDeadline: "Friday, September 18, 2026",
+  onboardingWeek: "September 21-25, 2026",
+};
+
+export const universityTimeline = [
+  {
+    label: "Priority applications",
+    date: universitySchedule.priorityApplicationDeadline,
+    detail: "Apply by this date for first review and track fit.",
+  },
+  {
+    label: "Acceptance/payment deadline",
+    date: universitySchedule.paymentDeadline,
+    detail: "Accepted students lock their seat before onboarding week.",
+  },
+  {
+    label: "Onboarding week",
+    date: universitySchedule.onboardingWeek,
+    detail: "Portal access, prep materials, and kickoff details go out.",
+  },
+  {
+    label: "Cohort kickoff",
+    date: universitySchedule.kickoffDate,
+    detail: "The founding cohort starts live.",
+  },
+];
+
 export const universityTracks = [
   {
     title: "12-Week Fast Track",
@@ -156,7 +186,7 @@ export const universityFAQ = [
   {
     question: "When does the founding cohort launch?",
     answer:
-      "The first cohort is being shaped now. Apply for early access and you will get the first look at dates, syllabus, and enrollment details before it opens publicly.",
+      `The founding cohort kicks off on ${universitySchedule.kickoffDate}. Priority applications are due by ${universitySchedule.priorityApplicationDeadline}, accepted students should lock their seat by ${universitySchedule.paymentDeadline}, and onboarding runs ${universitySchedule.onboardingWeek}.`,
   },
   {
     question: "What is the founding cohort price?",

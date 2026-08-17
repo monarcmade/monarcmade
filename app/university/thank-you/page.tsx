@@ -6,6 +6,7 @@ import { Container, Section } from "@/components/ui/Container";
 import { buildMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/data/site";
 import { siteImages } from "@/data/siteImages";
+import { universitySchedule } from "@/data/university";
 
 export const metadata: Metadata = buildMetadata({
   title: "Application Received",
@@ -17,15 +18,15 @@ export const metadata: Metadata = buildMetadata({
 const nextSteps = [
   {
     title: "Application review",
-    detail: "Your answers are reviewed for goal, readiness, track fit, and the kind of AI project you want to build.",
+    detail: `Your answers are reviewed for goal, readiness, track fit, and the kind of AI project you want to build. Priority applications are due ${universitySchedule.priorityApplicationDeadline}.`,
   },
   {
     title: "Follow-up",
-    detail: "Strong fits will get next-step details about dates, pricing, cohort format, and whether a quick call makes sense.",
+    detail: `Strong fits will get next-step details about cohort format and payment. Accepted students should lock their seat by ${universitySchedule.paymentDeadline}.`,
   },
   {
     title: "Keep learning",
-    detail: "Start with the AI from zero roadmap so the founding cohort feels familiar before doors open.",
+    detail: `Start with the AI from zero roadmap before onboarding week, ${universitySchedule.onboardingWeek}. The cohort kicks off ${universitySchedule.kickoffDate}.`,
   },
 ];
 
@@ -59,7 +60,7 @@ export default function UniversityThankYouPage() {
                 You&apos;re on the founding cohort list.
               </h1>
               <p className="text-lg text-(--color-text-secondary) leading-relaxed text-pretty">
-                Thanks for applying to Monarc University. Your application is in Airtable now, and the next step is reviewing fit around your goal, timeline, and the AI project you want to build.
+                Thanks for applying to Monarc University. Your application is in Airtable now, and the next step is reviewing fit around your goal, timeline, and the AI project you want to build before the founding cohort starts on {universitySchedule.kickoffDate}.
               </p>
               <div className="flex flex-wrap gap-3 pt-2">
                 <Button
