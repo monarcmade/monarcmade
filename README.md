@@ -41,6 +41,16 @@ UNIVERSITY_APPLICATION_FROM_EMAIL=Monarc University <onboarding@resend.dev>
 If the Resend variables are missing, applications still save to Airtable and email is skipped.
 When Resend is configured, the app sends an internal notification to `UNIVERSITY_APPLICATION_NOTIFY_EMAIL` and an applicant confirmation email to the submitted address.
 
+## Monarc University Student Hub
+
+The private student hub lives at `/university/student-hub`. It uses a shared cohort password for the first version and sets an HTTP-only access cookie after login.
+
+```bash
+MONARC_UNIVERSITY_STUDENT_PASSWORD=
+```
+
+Set this variable locally and in Vercel before sharing the hub link with paid students.
+
 ## Analytics
 
 Google Analytics 4 is wired through the global layout and sends page views plus the existing custom funnel events.
