@@ -301,11 +301,11 @@ export function UniversityPageBody() {
               <SectionHeader
                 eyebrow="Founding offer"
                 title="Start accessible. Scale with support."
-                description="Pricing will be finalized before enrollment opens. These tiers show how Monarc University can grow from a starter course into a guided cohort and premium build-with-me offer."
+                description="Founding cohort pricing is locked for the first group. Future cohorts can increase after student projects, testimonials, and the full portal are live."
                 align="center"
               />
             </motion.div>
-            <motion.div variants={fadeUpSection} className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <motion.div variants={fadeUpSection} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {universityOffer.map((offer) => (
                 <article
                   key={offer.name}

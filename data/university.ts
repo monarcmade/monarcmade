@@ -22,18 +22,18 @@ export const universityTracks = [
   {
     title: "12-Week Fast Track",
     eyebrow: "Accelerated",
-    price: "$1,497-$2,500",
+    price: "$1,997 founding price",
     description:
       "For serious builders who want structure, speed, accountability, and a clear finish line.",
-    details: ["6-10 hours per week", "2 live sessions per week", "Weekly labs and reviews", "Capstone shipped by week 12"],
+    details: ["6-10 hours per week", "2 live sessions per week", "3 payments of $750 available", "Capstone shipped by week 12"],
   },
   {
     title: "24-Week Guided Cohort",
     eyebrow: "Standard",
-    price: "$2,500-$4,000",
+    price: "$2,997 founding price",
     description:
       "For beginners and busy professionals who want the same outcome with more room to practice.",
-    details: ["3-5 hours per week", "1 live session per week", "More review time", "Same capstone, slower pace"],
+    details: ["3-5 hours per week", "1 live session per week", "6 payments of $550 available", "Same capstone, slower pace"],
   },
 ];
 
@@ -132,18 +132,23 @@ export const universityCapstones = [
 export const universityOffer = [
   {
     name: "Self-Paced Starter",
-    price: "$297-$497",
-    description: "Recorded lessons, templates, starter prompts, and project examples for students who want to move independently.",
+    price: "$297",
+    description: "Recorded lessons, templates, starter prompts, and project examples for students who want to move independently. Later price: $497.",
   },
   {
-    name: "Builder Cohort",
-    price: "$1,497-$2,500",
-    description: "Live cohort access, labs, reviews, community, recordings, templates, and a capstone build.",
+    name: "12-Week Fast Track",
+    price: "$1,997",
+    description: "Live cohort access, two sessions per week, labs, reviews, community, recordings, templates, and a shipped capstone. Payment plan: 3 payments of $750.",
+  },
+  {
+    name: "24-Week Guided Cohort",
+    price: "$2,997",
+    description: "The same six-phase builder path with one live session per week, more practice time, and a shipped capstone. Payment plan: 6 payments of $550.",
   },
   {
     name: "VIP Build-With-Me",
-    price: "$5,000+",
-    description: "Private support for founders, service providers, and students building a project they plan to sell or deploy.",
+    price: "Starts at $5,000",
+    description: "Private support for founders, service providers, and students building a defined AI project they plan to sell, deploy, or use in their business.",
   },
 ];
 
@@ -151,7 +156,12 @@ export const universityFAQ = [
   {
     question: "When does the founding cohort launch?",
     answer:
-      "The first cohort is being shaped now. Apply for early access and you will get the first look at dates, pricing, syllabus, and enrollment details before it opens publicly.",
+      "The first cohort is being shaped now. Apply for early access and you will get the first look at dates, syllabus, and enrollment details before it opens publicly.",
+  },
+  {
+    question: "What is the founding cohort price?",
+    answer:
+      "The Self-Paced Starter is $297, the 12-Week Fast Track is $1,997, the 24-Week Guided Cohort is $2,997, and VIP Build-With-Me support starts at $5,000 for a defined project.",
   },
   {
     question: "What's the time commitment per week?",
